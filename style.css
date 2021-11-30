@@ -30,6 +30,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    display: flex;
 }
 
 /* colonna di sinistra */
@@ -48,6 +49,7 @@ body{
     align-items: center;
     padding: 10px;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .nome-utente{
@@ -163,7 +165,67 @@ body{
 }
 
 
-/* ******* debug ******** */
-.debug .colonna-sinistra{
-    background-color: rgb(255, 255, 102);
+/* colonna di destra */
+.colonna-destra{
+    width: 65%;
+    height: 100%;
+    background-image: url(img/mine.jpg);
+    display: flex;
+    position: relative;
 }
+
+.mess-ricevuti{
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.mess-inviati{
+    width: 50%;
+    position: absolute;
+    right: -0%;
+    top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-ricevuto{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    border-radius: 20em;
+}
+
+.text-inviato{
+    width: 250px;
+    height: 50px;
+    background-color: hsl(94deg 84% 85%);
+    border-radius: 20em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ******* debug ******** */
+/* .debug .colonna-sinistra{
+    background-color: rgb(255, 255, 102);
+} */
+
+/* .debug .mess-ricevuti{
+    background-color: lightgrey;
+}
+
+.debug .mess-inviati{
+    background-color: lightgreen;
+} */
