@@ -9,6 +9,11 @@
 
     <!-- link font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body class="debug">
@@ -22,14 +27,33 @@
             <!-- container principale -->
             <div class="main-container">
 
+                <!-- colonna di sinistra -->
                 <div class="colonna-sinistra">
-                    <div class="barra-grigia"></div>
+                    <div class="barra-grigia">
+                        <div class="nome-utente">
+                            <img src="img/avatar_2.jpg" alt="">
+                            <span>Francesco</span>
+                        </div>
+                    </div>
                     <div class="notifiche-nuovimes"></div>
                     <div class="barra-ricerca">
                         <button><i class="fas fa-search"></i></button>
-                        <input type="text" >
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    </div>
+
+                    <div class="container-contatti">
+                        <ul>
+                            <li>
+                                <div class="casella-contatto">
+                                    <img src="img/avatar_1.jpg" alt="">
+                                    <span>Michele</span>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <!-- /colonna di sinistra -->
+
             </div>
             <!-- /container principale -->
 

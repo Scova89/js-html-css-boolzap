@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* elementi in background */
 .background{
     position: relative;
     background-color: hsl(67deg 10% 84%);
@@ -16,6 +21,7 @@
     height: 30vh;
 }
 
+/* elementi nel main container */
 .main-container{
     height: 80vh;
     width: 80%;
@@ -26,8 +32,9 @@
     background-color: white;
 }
 
+/* colonna di sinistra */
 .colonna-sinistra{
-    width: 30%;
+    width: 35%;
     height: 100%;
 }
 
@@ -35,6 +42,21 @@
     height: 50px;
     width: 100%;
     background-color: hsl(0deg 0% 92%);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.nome-utente{
+    display: flex;
+    align-items: center;
+}
+
+.barra-grigia img{
+    object-fit: cover;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
 .notifiche-nuovimes{
@@ -47,6 +69,39 @@
     height: 40px;
     width: 100%;
     background-color: hsl(0deg 0% 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.barra-ricerca button{
+    width: 20%;
+    padding: 5px;
+}
+
+.barra-ricerca input{
+    width: 80%;
+    padding: 5px;
+}
+
+.container-contatti li{
+    list-style: none;
+}
+
+.casella-contatto{
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.casella-contatto img{
+    object-fit: cover;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
 
