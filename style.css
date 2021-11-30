@@ -32,11 +32,22 @@
 }
 
 .barra-grigia{
-    height: 60px;
+    height: 50px;
     width: 100%;
     background-color: hsl(0deg 0% 92%);
 }
 
+.notifiche-nuovimes{
+    height: 60px;
+    width: 100%;
+    background-color: hsl(199deg 95% 77%);
+}
+
+.barra-ricerca{
+    height: 40px;
+    width: 100%;
+    background-color: hsl(0deg 0% 98%);
+}
 
 
 /* ******* debug ******** */
