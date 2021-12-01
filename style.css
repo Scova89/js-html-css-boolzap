@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    
 }
 
 /* elementi in background */
@@ -23,14 +24,15 @@ body{
 
 /* elementi nel main container */
 .main-container{
-    height: 80vh;
-    width: 80%;
+    height: 80%;
+    width: 1080px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
     display: flex;
+    
 }
 
 /* colonna di sinistra */
@@ -39,6 +41,8 @@ body{
 .colonna-sinistra{
     width: 35%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .barra-grigia{
@@ -49,7 +53,7 @@ body{
     align-items: center;
     padding: 10px;
     justify-content: space-between;
-    z-index: 1;
+    
 }
 
 .nome-utente{
@@ -107,12 +111,12 @@ body{
 }
 
 .testo-notifiche p{
-    font-size: 10pt;
+    font-size: 9pt;
     color: hsl(197deg 30% 5%);
 }
 
 .testo-notifiche a{
-    font-size: 9pt;
+    font-size: 8pt;
 }
 
 
@@ -125,8 +129,8 @@ body{
     background-color: hsl(0deg 0% 98%);
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 5px;
+    justify-content: space-around;
+    padding: 5px 5px;
 }
 
 .barra-ricerca button{
@@ -145,6 +149,16 @@ body{
 
 
 /* Container per i contatti */
+.container-contatti{
+    display: block;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+
+
 .container-contatti li{
     list-style: none;
 }
@@ -169,44 +183,53 @@ body{
 .colonna-destra{
     width: 65%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.background-messaggi{
+    height: calc(100% - 70px);
+    display: flex;
     background-image: url(img/mine.jpg);
+    overflow-y: scroll;
+    padding: 30px;
+    flex-direction: column;
+}
+
+.messaggi{
+    width: 100%;
+}
+
+.message-text{
+    max-width: 40%;
+    padding: 10px;
+    border-radius: 20px; 
+    
+
+}
+
+.data-ora{
+    font-size: 9pt;
+    color: rgb(192, 192, 192);
     display: flex;
-    position: relative;
+    justify-content: end;
+    text-align: end;
+    
 }
 
-.mess-ricevuti{
-    width: 50%;
-    position: absolute;
-    top: 20%;
-    display: flex;
-    justify-content: center;
-}
-
-.mess-inviati{
-    width: 50%;
-    position: absolute;
-    right: -0%;
-    top: 20%;
-    display: flex;
-    justify-content: center;
-}
-
-.text-ricevuto{
-    width: 250px;
-    height: 50px;
-    background-color: white;
-    border-radius: 20em;
-}
-
-.text-inviato{
-    width: 250px;
-    height: 50px;
+.message-text.sent{
     background-color: hsl(94deg 84% 85%);
-    border-radius: 20em;
-
+    margin-left: auto;
+    
 }
 
+.message-text.received{
+    background-color: white;
+}
 
+.fa-smile, .fa-microphone{
+    color: hsl(196deg 5% 44%);
+}
 
 
 

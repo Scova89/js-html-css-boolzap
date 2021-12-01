@@ -58,12 +58,13 @@
 
                     <div class="container-contatti">
                         <ul>
-                            <li>
+                            <li v-for="contact in contacts">
                                 <div class="casella-contatto">
                                     <img src="img/avatar_1.jpg" alt="">
                                     <span>Michele</span>
                                 </div>
                             </li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -84,14 +85,43 @@
                         </div>
                     </div>
 
+                    <div class="background-messaggi">
+                        <div class="messaggi">
+                            <div class="message-text sent">
+                                <span>ciao</span>
+                                
+                                <span class="data-ora">data ora</span>
+                            </div>
+                            
+                        </div>
+                        
 
-                    <div class="mess-ricevuti">
-                        <div class="text-ricevuto"></div>
+                        <div class="messaggi">
+                            <div class="message-text received">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit laboriosam necessitatibus, sed nostrum et recusandae quis odio nisi architecto error quidem hic molestiae vitae non quisquam aliquid dolorum corporis voluptate.</p>
+                                
+                                <span class="data-ora">data ora</span>
+                            </div>
+                        </div>
+
+                        <div class="messaggi">
+                            <div class="message-text sent">
+                                <span>ciao</span>
+                                
+                                <span class="data-ora">data ora</span>
+                            </div>
+                            
+                        </div>
                     </div>
 
+                    
+                    
+                    
 
-                    <div class="mess-inviati">
-                        <div class="text-inviato"></div>
+                    <div class="barra-ricerca">
+                        <i class="far fa-smile"></i>
+                        <input type="text" placeholder="Scrivi un messaggio">
+                        <i class="fas fa-microphone"></i>
                     </div>
 
                     
