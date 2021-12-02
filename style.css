@@ -198,6 +198,7 @@ body{
 
 .messaggi{
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .message-text{
@@ -214,7 +215,7 @@ body{
     display: flex;
     justify-content: end;
     text-align: end;
-    
+    margin-top: 5px;
 }
 
 .message-text.sent{

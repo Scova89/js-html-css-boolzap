@@ -76,7 +76,7 @@
                     <div class="barra-grigia">
                         <div class="nome-utente">
                             <img :src="`./img/avatar${contacts[currentContact].avatar}.jpg`" :alt="contacts[currentContact].name">
-                            <span>Michele</span>
+                            <span>{{contacts[currentContact].name}}</span>
                         </div>
                         <div class="icons-side">
                             <i class="fas fa-search"></i>
@@ -86,24 +86,14 @@
                     </div>
 
                     <div class="background-messaggi">
-                        <div class="messaggi" v-for="(mess, index) in contacts">
-                            <div class="message-text sent">
-                                <p>{{contacts.message}}</p>
-                                <span class="data-ora">{{contacts.date}}</span>
+                        <div class="messaggi" v-for="mess in contacts[currentContact].messages">
+                            <div class="message-text" :class="mess.status">
+                                <p>{{mess.message}}</p>
+                                <span class="data-ora">{{mess.date}}</span>
                             </div>
                             
                         </div>
-                        
-
-                        <div class="messaggi"  v-for="mess in contacts">
-                            <div class="message-text received">
-                                <p>{{contacts.message}}</p>
-                                
-                                <span class="data-ora">{{contacts.date}}</span>
-                            </div>
-                        </div>
-
-                        
+                   
                     </div>
 
                     
