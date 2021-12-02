@@ -169,6 +169,7 @@ body{
     display: flex;
     align-items: center;
     padding: 10px;
+    cursor: pointer;
 }
 
 .casella-contatto img{
@@ -176,6 +177,7 @@ body{
     height: 50px;
     border-radius: 50%;
     margin-right: 15px;
+    
 }
 
 
