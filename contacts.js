@@ -87,10 +87,10 @@ const app = new Vue({
         
     },
 
-
-
-    
     methods: {
+        changeContact: function(i) {
+			this.currentContact = i;
+		}
 
     }
 })
