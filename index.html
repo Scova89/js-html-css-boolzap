@@ -75,7 +75,7 @@
                 <div class="colonna-destra">
                     <div class="barra-grigia">
                         <div class="nome-utente">
-                            <img src="img/avatar_1.jpg" alt="">
+                            <img :src="`./img/avatar${contacts[currentContact].avatar}.jpg`" :alt="contacts[currentContact].name">
                             <span>Michele</span>
                         </div>
                         <div class="icons-side">
@@ -86,32 +86,24 @@
                     </div>
 
                     <div class="background-messaggi">
-                        <div class="messaggi">
+                        <div class="messaggi" v-for="(mess, index) in contacts">
                             <div class="message-text sent">
-                                <span>ciao</span>
-                                
-                                <span class="data-ora">data ora</span>
+                                <p>{{contacts.message}}</p>
+                                <span class="data-ora">{{contacts.date}}</span>
                             </div>
                             
                         </div>
                         
 
-                        <div class="messaggi">
+                        <div class="messaggi"  v-for="mess in contacts">
                             <div class="message-text received">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit laboriosam necessitatibus, sed nostrum et recusandae quis odio nisi architecto error quidem hic molestiae vitae non quisquam aliquid dolorum corporis voluptate.</p>
+                                <p>{{contacts.message}}</p>
                                 
-                                <span class="data-ora">data ora</span>
+                                <span class="data-ora">{{contacts.date}}</span>
                             </div>
                         </div>
 
-                        <div class="messaggi">
-                            <div class="message-text sent">
-                                <span>ciao</span>
-                                
-                                <span class="data-ora">data ora</span>
-                            </div>
-                            
-                        </div>
+                        
                     </div>
 
                     
