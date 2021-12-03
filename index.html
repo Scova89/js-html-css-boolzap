@@ -99,12 +99,13 @@
                     
                     
                     
-
+                    <!-- barra input messaggi -->
                     <div class="barra-ricerca">
                         <i class="far fa-smile"></i>
-                        <input type="text" placeholder="Scrivi un messaggio" v-model="inputMessage">
+                        <input type="text" placeholder="Scrivi un messaggio" v-model="inputMessage" v-on:keyup.enter="addMessage">
                         <i class="fas fa-microphone"></i>
                     </div>
+                    <!-- /barra input messaggi -->
 
                     
 
