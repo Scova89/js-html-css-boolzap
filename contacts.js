@@ -85,6 +85,7 @@ const app = new Vue({
 
         currentContact: 0,
         inputMessage: '',
+        cerca: ''
     },
 
     methods: {
@@ -117,8 +118,26 @@ const app = new Vue({
                     status: 'received',
                 }
             );
-        }
+        },
 
+        
+        cercaUtenti: function (){
+
+            for(let i = 0; i < this.contacts.length; i++){
+                let minusc = this.contacts[i].name.toLowerCase();
+                let minusCerca = this.cerca.toLowerCase();
+                if(minusc.includes(minusCerca)){
+                    this.contacts[i].visible = true;
+                }else{
+                    this.contacts[i].visible = false;
+                }
+            }
+
+        },
+
+        cancMess: function(index){
+            this.contacts[this.currentContact].messages.splice(index, 1);
+        }
     }
 })
 
