@@ -92,7 +92,7 @@ const app = new Vue({
 			this.currentContact = i;
 		},
 
-        addMessage: function() {
+        addMessage: function(contatto) {
             if(this.inputMessage != ""){
                 this.contacts[this.currentContact].messages.push(
                     {
@@ -101,9 +101,24 @@ const app = new Vue({
                         status: 'sent',
                     }
                 );
-                this.inputMessage = '';
+                this.inputMessage = '';  
             }
+
+            setTimeout (()=>{
+                this.risposta(contatto)
+            }, 1000); 
         },
+
+        risposta: function (contatto){
+            this.contacts[contatto].messages.push(
+                {
+                    date: '10/01/2020 15:30:55',
+                    message: 'ok',
+                    status: 'received',
+                }
+            );
+        }
+
     }
 })
 
